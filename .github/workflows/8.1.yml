@@ -21,10 +21,11 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      - name: Check location
+        run: ls -la
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: .
           file: ./8.1/Dockerfile
           push: true
           tags: mirzaq19/laravel-docker-image:8.1
