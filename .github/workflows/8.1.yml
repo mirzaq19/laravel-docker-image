@@ -28,7 +28,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: .
+          context: ./8.1
           file: ./8.1/Dockerfile
           push: true
           tags: mirzaq19/laravel-docker-image:8.1
