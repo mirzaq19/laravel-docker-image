@@ -34,4 +34,4 @@ jobs:
           context: ./8.2-dptsi-grpc
           file: ./8.2-dptsi-grpc/Dockerfile
           push: true
-          tags: mirzaq19/laravel-docker-image:8.2
+          tags: mirzaq19/laravel-docker-image:8.2-dptsi-grpc
