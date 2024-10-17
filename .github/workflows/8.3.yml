@@ -1,4 +1,4 @@
-name: Laravel Docker Image With PHP Latest Stable Version CI
+name: Laravel Docker Image With PHP 8.3 CI
 
 on:
   push:
