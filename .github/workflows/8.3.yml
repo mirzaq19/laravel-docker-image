@@ -34,4 +34,4 @@ jobs:
           context: ./8.3
           file: ./8.3/Dockerfile
           push: true
-          tags: mirzaq19/laravel-docker-image:latest
+          tags: mirzaq19/laravel-docker-image:8.3
