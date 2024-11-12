@@ -1,7 +1,7 @@
 FROM php:8.3.12-fpm-alpine
 
 # Install packages and remove default server definition
-RUN apk --no-cache add gnupg autoconf make g++ nginx supervisor zlib-dev libpng-dev icu-dev icu-libs librdkafka-dev git libzip-dev shadow nodejs file imagemagick imagemagick-dev
+RUN apk --no-cache add gnupg autoconf make g++ nginx supervisor zlib-dev libpng-dev icu-dev icu-libs librdkafka-dev git libzip-dev shadow nodejs npm file imagemagick imagemagick-dev
 
 # Install PHP extensions
 RUN docker-php-ext-install bcmath gd exif pcntl intl zip pdo pdo_mysql
